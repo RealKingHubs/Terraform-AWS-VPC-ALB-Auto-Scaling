@@ -41,5 +41,5 @@ variable "ami" {
 
 variable "bastion" {
   type    = string
-  default = "YOUR/IP"
+  default = "Your/IP"
 }
