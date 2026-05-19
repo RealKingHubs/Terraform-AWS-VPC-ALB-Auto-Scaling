@@ -221,16 +221,6 @@ This will terminate the ASG instances, delete the ALB, NAT Gateways, subnets, se
 
 ---
 
-## What I Would Add Next
-
-- **HTTPS** — ALB listener on port 443 with an ACM-managed TLS certificate and HTTP-to-HTTPS redirect on port 80
-- **Database tier** — Private subnet group with RDS (PostgreSQL or MySQL) and its own security group accepting traffic only from `web-sg`
-- **CloudWatch alarms** — CPU utilization threshold, unhealthy host count on the target group, and ASG scaling activity notifications
-- **AWS WAF** — Web Application Firewall attached to the ALB for Layer 7 protection against common web exploits
-- **VPC Flow Logs** — Network traffic logging to S3 or CloudWatch for auditing and incident investigation
-
----
-
 ## Author
 
 **Odo Kingsley Uchenna**
